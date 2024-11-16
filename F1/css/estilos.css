@@ -130,6 +130,10 @@ max-width: 500px;
 .menuBurguer{
     display: none;
 }
+
+.cerrar{
+    display: none;
+}
 @media(max-width:950px){
     .difuminado{
         width: 100%;

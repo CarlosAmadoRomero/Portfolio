@@ -6,7 +6,7 @@ anterior.addEventListener('click',prevSlide);
 siguiente.addEventListener('click',nextSlide);
 let indice = 0;
 
-setInterval(nextSlide,3000);
+setInterval(nextSlide,300000);
 
 function prevSlide(){
     if (indice==0) {
