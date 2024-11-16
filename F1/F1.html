@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Schedule</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="world">
+            <h4>Races</h4>
+        </div>
+        <div class="otros" id="otros">
+            <a href="https://www.formula1.com/">Home</a>
+            <a href="https://tickets.formula1.com/en/t-111-faq">Tickets</a>
+            <a href="https://corp.formula1.com/about-f1/">About</a>
+            <a href="https://www.formula1.com/en/latest/article/faqs-and-contact-information.1TqkueKz2aRd9diRUQlq2U">Contact</a>
+            
+            <button onclick="Cerrar()" class="cerrar" id="cerrar"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"/>
+              </svg></button>
+        </div>
+
+        <div class="menuBurguer" id="menuBurguer">
+             <svg class="burguer" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg> 
+        </div>
+    </header>
+
+    <div class="slider" id="slider">
+
+        <div class="botones">
+            <button class="anterior" onclick="anterior()"><</button>
+            <button class="siguiente" onclick="siguiente()">></button>
+        </div>
+
+
+        <div class="slides">
+            <div class="slide">
+                <div class="difuminado">
+                    <h2>GP LAS VEGAS</h2>
+                    <h4>dom, 24 nov</h4>
+                    <p>¡Vive la emoción única del GP de Fórmula 1 en Las Vegas! Siente la adrenalina mientras los
+                        mejores pilotos del mundo se enfrentan al circuito nocturno en el icónico Strip de Las Vegas,
+                        rodeado de luces, lujo y velocidad. No te pierdas esta experiencia histórica llena de glamour y
+                        velocidad en una de las ciudades más vibrantes del mundo. ¡Asegura ya tus entradas y prepárate
+                        para un espectáculo inolvidable!</p>
+                </div>
+                <video autoplay muted loop>
+                    <source src="./Videos/LasVegas.mp4" type="video/mp4">
+                </video>
+
+            </div>
+
+            <div class="slide">
+                <div class="difuminado">
+                    <h2>GP QATAR</h2>
+                    <h4>dom, 1 dic</h4>
+                    <p>¡Experimenta la velocidad y la pasión de la Fórmula 1 en el Gran Premio de Qatar! Ven a disfrutar
+                        de la acción en el espectacular Circuito de Losail, donde los pilotos más rápidos del mundo se
+                        enfrentarán al desafío de la pista bajo el impresionante cielo nocturno del desierto. Vive la
+                        emoción de la F1 en un escenario único y llena de energía cada curva. ¡Asegura tus entradas
+                        ahora y sé parte de esta experiencia llena de adrenalina en Qatar!</p>
+                </div>
+                <video autoplay muted loop>
+                    <source src="./Videos/Qatar.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="slide">
+                <div class="difuminado">
+                    <h2>GP ABU DABI</h2>
+                    <h4>dom, 8 dic</h4>
+                    <p>¡No te pierdas el espectacular cierre de temporada de la Fórmula 1 en el Gran Premio de Abu Dabi!
+                        Vive la intensidad de la última carrera del año en el impresionante circuito de Yas Marina,
+                        donde los campeones se definen bajo un cielo de atardecer inolvidable. Lujo, velocidad y emoción
+                        se unen en este evento icónico, con un ambiente vibrante y entretenimiento de clase mundial.
+                        ¡Compra tus entradas ahora y sé parte del desenlace de la temporada de F1 en Abu Dabi!</p>
+                </div>
+                <video autoplay muted loop>
+                    <source src="./Videos/Abu-Dhabi.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="slide">
+
+                <div class="difuminado">
+                    <h2>GP BRASIL</h2>
+                    <h4>dom, 3 nov</h4>
+                    <p>¡Siente la pasión y la energía del Gran Premio de Brasil en el legendario circuito de Interlagos!
+                        Vive la emoción de la Fórmula 1 en una de las pistas más icónicas del mundo, famosa por su
+                        atmósfera única y sus apasionados fanáticos. Sé testigo de adelantamientos al límite y giros
+                        impredecibles en un ambiente lleno de samba, color y adrenalina. ¡Asegura tus entradas y
+                        prepárate para una experiencia inolvidable en São Paulo!</p>
+                </div>
+                <video autoplay muted loop>
+                    <source src="./Videos/Brasil.mp4" type="video/mp4">
+                </video>
+
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+<script src="./script/scriptSlide.js"></script>
+
+</html>

@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    /* padding: 2%; */
+    
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    /* background-color: black; */
+    font-size: 20px;
+    color: white;
+}
+.world{
+    padding: 2%;
+    text-transform: uppercase;
+}
+.otros{
+    text-transform: capitalize;
+    display: flex;
+    gap: 15px;
+    padding: 2%;
+}
+.otros button{
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+
+}
+
+:target{
+    background-color: white;
+    
+}
+
+.NoActivo{
+    display: none;
+}
+
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    min-width: 100%;
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+
+.slide video{
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    margin: 0;
+    z-index: 1;
+    
+    /* filter: blur(15px); */
+}
+.slide p{
+max-width: 500px;
+}
+.botones{
+    position: absolute;
+    /* bot */
+    bottom: 0;
+    right: 0;
+    gap: 0;
+    display: flex;
+}
+.botones button{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(176, 176, 176);
+    border: none;
+    z-index: 2;
+    font-size: 40px;
+}
+.botones button:active{
+    background-color: rgb(102, 102, 102);;
+}
+.difuminado{
+    width: 40%;
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.difuminado h2{
+    font-size: 100px;
+    margin-bottom: 3%;
+}
+.difuminado h2 ,p {
+    margin-left: 10%;
+}
+.difuminado p{
+    line-height: 30px;
+}

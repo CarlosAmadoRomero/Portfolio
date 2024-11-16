@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+span{
+    background-color: white;
+    height: 5px;
+    width: 100%;
+}
+header{
+    /* padding: 2%; */
+    
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    /* background-color: black; */
+    font-size: 20px;
+    color: white;
+}
+.world{
+    padding: 2%;
+}
+h4{
+    text-transform: uppercase;
+}
+.otros{
+    text-transform: capitalize;
+    display: flex;
+    gap: 15px;
+    padding: 2%;
+}
+.otros a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+:target{
+    background-color: white;
+    
+}
+
+.NoActivo{
+    display: none;
+}
+
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide{
+    min-width: 100%;
+    height: 100vh; 
+    margin: 0;
+    display: flex;
+    position: relative;
+}
+
+.slide video{
+    width: 100%;
+    height: 100vh; 
+    object-fit: cover;
+    margin: 0;
+    z-index: 1;
+    
+    /* filter: blur(15px); */
+}
+.slide p{
+max-width: 500px;
+}
+.botones{
+    position: absolute;
+    /* bot */
+    bottom: 0;
+    right: 0;
+    gap: 0;
+    display: flex;
+}
+.botones button{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(176, 176, 176);
+    border: none;
+    z-index: 2;
+    font-size: 40px;
+}
+.botones button:active{
+    background-color: rgb(102, 102, 102);;
+}
+.difuminado{
+    width: 40%;
+    height: 100vh;
+    z-index: 2;
+    position: absolute;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    color: white;
+}
+
+.difuminado h2{
+    font-size: 100px;
+    margin-bottom: 3%;
+}
+.difuminado h2 ,p, h4 {
+    margin-left: 10%;
+}
+.difuminado p{
+    line-height: 30px;
+}
+.difuminado h4{
+    margin-bottom: 3%;
+    font-size: 25px;
+}
+
+.menuBurguer{
+    display: none;
+}
+@media(max-width:950px){
+    .difuminado{
+        width: 100%;
+        text-align: center;
+    }
+    .difuminado p{
+        margin: 0;
+        max-width: none;
+        margin: 0 40px;
+      
+    }
+    .difuminado h2 ,p, h4 {
+        margin-left: 0;
+    }
+ 
+    .botones button{
+        z-index: 999;
+    }
+
+    .otros{
+        display: none;
+        background-color: white;
+        width: 100%;
+        height: 100vh;
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: relative;
+    }
+    .otros a{
+        color: black;
+        
+    }
+    .menuBurguer{
+        display: block;
+        width: 50px;
+        height: 50px;
+        padding: 1%;
+    }
+
+    .cerrar{
+        position: absolute;
+        top: 15px;
+        right: -5%;
+        border: none;
+        background-color: white;
+    }
+    .botones button{
+        width: 50px;
+        height: 50px;
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style2.css">
+</head>
+
+<body>
+    <div class="contenedorGeneral">
+        <div class="titulo">
+            <h1>Upgrade your Account</h1>
+            <div>
+                <label id="pasos-barra">1 of 5 completed</label>
+                <div class="border-barra-progreso">
+                    <div id="relleno-barra-progreso"class="relleno-barra-progreso">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="pasos" >
+
+            <i class="bi-check-circle" onclick="cambiarImagen('C1')" id="C1">Application data </i>
+            <i class="bi-circle" onclick="cambiarImagen('C2')" id="C2">Tax residency </i>
+            <i class="bi-circle" onclick="cambiarImagen('C3')" id="C3">Identity card </i>
+            <i class="bi-circle" onclick="cambiarImagen('C4')" id="C4">Investability </i>
+            <i class="bi-circle" onclick="cambiarImagen('C5')" id="C5">Review </i>
+
+        </div>
+        <div class="texto">
+            <h1 id="textoh1">Applicant Data</h1>
+
+            <p id="textop">Please take a selfie with your document so that it s clearly visible anddose not cover your face.</p>
+
+        </div>
+
+        <form onsubmit="return validarFormulario()" class="formulario">
+            <div class="contenedor_formulario">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="email" id="correo" placeholder="Correo Elecronico">
+
+                <div class="mitad">
+                    <input type="text" id="phone" placeholder="Phone">
+                    <input type="text" id="education" placeholder="Education">
+                </div>
+
+                <input type="text" id="nombreCompania" placeholder="CompanyName">
+                <input type="text" id="add" placeholder="Address Line 1">
+
+                <div class="tercio">
+                    <input type="text" id="city" placeholder="City">
+                    <input type="text" id="state" placeholder="State/Province/Region">
+                    <input type="text" id="codigoPostal" placeholder="Zip/Postal Code">
+                </div>
+
+                <div class="setenta">
+                    <input type="text" id="compania" placeholder="Company No.">
+                    <select name="pais" id="pais">
+                        <option value="Country" selected disabled hidden>Country</option>
+                        <option value="USA">USA</option>
+                        <option value="USB">USB</option>
+                        <option value="USC">USC</option>
+                    </select>
+                </div>
+
+                <p>Show country on your profile and badges</p>
+                <div class="sino">
+                    <input type="radio" id="radio" name="radio">Yes
+                    <input type="radio" id="radio" name="radio">No
+                </div>
+                <div class="contenedorFooter">
+                    <div class="imagen">
+                        <img src="./img/imagen_formulario.png" alt="">
+
+                    </div>
+
+                    <button type="submit" class="next">Next</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="./script/script2.js"></script>
+
+
+
+</html>
+
+
+<!-- formulario con h1 4 pasos(click) h2 parrafo y campos -->

@@ -1,0 +1,168 @@
+*{
+    font-family: sans-serif;
+}
+h1{
+    font-weight: 800;
+   color:  rgb(38, 38, 138);
+}
+p{  
+
+    margin: 0;
+    padding: 0;
+    font-size: x-large;
+    color:  rgb(38, 38, 138);
+}
+i:hover{
+    color: black;
+}
+body{
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+input{
+    border: 0;
+    background-color: #ddeef9;
+}
+select{
+    background-color: #ddeef9;
+}
+input::placeholder{
+    color:  rgb(38, 38, 138);
+}
+select{
+    border: 0;
+}
+.contenedorGeneral{
+    background-color: rgb(233, 240, 243);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 1300px;
+    height: 1500px;
+    padding: 105px;
+    border-radius: 10px;
+    box-shadow: 0 0 40px rgb(150, 149, 149);
+    gap: 100px;
+}
+.titulo{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+.titulo .border-barra-progreso{
+    border: 1px solid grey;
+    border-radius: 500px;
+    gap: 1px;
+    width: 400px;
+    height: 30px;
+}
+.titulo .relleno-barra-progreso{
+    border-radius: 500px;
+    background-color: rgb(38, 38, 138);
+    width: 20%;
+    height: 30px;
+}
+.pasos{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.texto{
+    text-align: center;
+    color:  rgb(38, 38, 138);
+    margin: 3%;
+}
+.texto p{
+    font-weight: 600;
+    }
+.contenedor_formulario{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 3%;
+    gap: 15px;
+    
+}
+input{
+    padding: 15px;
+}
+.mitad{
+    display: flex;
+    gap: 15px;
+}
+.mitad input{
+    width: 50%;
+}
+
+.tercio{
+    display: flex;
+    gap: 15px;
+}
+.tercio input{
+    width: 33%;
+}
+
+.setenta{
+    display: flex;
+    gap: 15px;
+}
+.setenta input {
+ width: calc(66% - 20px);
+}
+.setenta select{
+    width: 33%;
+}
+
+.sino{
+    display: flex;
+    gap: 5px;
+}
+.contenedorFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 10%;
+   
+}
+
+.contenedorFooter img{
+    width: 450px;
+    height: 200px;
+}
+
+.next{
+    height: 15%;
+    width: 15%;
+    background-color: #6044fc;
+    border: 1px solid;
+    color: white;
+    padding: 1%;
+}
+
+
+
+
+.bi-circle{
+    font-size: 2rem;
+    color: grey;
+}
+
+.bi-check-circle{
+    font-size: 2rem;
+    color: rgb(38, 38, 138);
+}
+.bi-check-circle:hover{
+    color: rgb(38, 38, 138);
+}
+
+.imagen{
+    margin-left: -170px;
+    margin-top: 100px;
+}
+.pasos{
+    cursor: pointer;
+}
