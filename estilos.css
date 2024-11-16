@@ -292,10 +292,10 @@ section{
     background-color: whitesmoke;
 }
 .paletaClaro .colorSecundario{
-    background-color: wheat;
+    background-color: #121212;
 }
 .paletaClaro .colorTerciario{
-    background-color: chocolate;
+    background-color: #333333;
 }
 
 .paletaMaron .colorPrimario{
