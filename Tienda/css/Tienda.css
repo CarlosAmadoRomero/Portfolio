@@ -79,6 +79,10 @@ header {
     height: 100%;
 }
 
+.bi{
+    font-size: 30px;
+    opacity: 0.5;
+}
 .botones {
     display: flex;
 }
@@ -102,9 +106,12 @@ header {
     right: 0;
 }
 
-.anterior:hover,
-.siguiente:hover {
+.anterior:hover,.siguiente:hover {
     background-color: #33454e97;
+    cursor: pointer;
+}
+.anterior:hover .bi , .siguiente:hover .bi{
+opacity: 1;
 }
 
 /* gridItems */
@@ -169,6 +176,9 @@ header {
     background-size: 100%;
   
 }
+.contenedorOfertas h2{
+    color: whitesmoke;
+}
 
 .sliderOferta {
     width: 60%;
@@ -177,6 +187,7 @@ header {
     background-color: white;
     position: relative;
     display: flex;
+    border-radius: 20px;
    
 }
 
@@ -184,6 +195,7 @@ header {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
+    border-radius: 20px;
 
 }
 
@@ -192,22 +204,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #333333;
-    background-image: url(/Tienda/img/cespedjpg.jpg);
-    background-size: 100%;
+    /* background-color: var(--color-primario); */
+    border-radius: 20px;
+    /* background-image: url(/Tienda/img/cespedjpg.jpg); */
+    /* background-size: 100%; */
     /* gap: 50px; */
 }
 
 .imagenOferta {
     display: flex;
-    /* width: 50%; */
+    width: 30%;
+    justify-content: center;
    
 }
 
 .imagenOferta img {
-    width: 50%;
+    width: 80%;
     height: 50%;
-    margin-left: 15%;
 }
 
 .textoOferta {
@@ -217,12 +230,24 @@ header {
     align-items: center;
     width: 50%;
     height: 100%;
-    
-}
-.textoOferta p,h3{
-    color: white;
+    gap: 20px;
+    text-align: center;
 }
 
+.textoOferta p,h3{
+    color: #333333;
+    font-weight: 900;
+}
+.textoOferta h3{
+    font-size: 25px;
+    /* text-align: center; */
+}
+
+.precio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .cajaBullet {
     width: 400px;
     height: 40px;
