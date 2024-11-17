@@ -53,7 +53,9 @@ header {
     margin-right: 20px;
 }
 
-
+.barraNavegacion a:hover{
+    color: #d5ce51;
+}
 
 .slider {
     overflow: hidden;

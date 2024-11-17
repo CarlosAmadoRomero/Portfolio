@@ -71,7 +71,7 @@ if (window.scrollY>300) {
 
     botonArriba.style.display="none";
 }
-})
+});
 
 botonArriba.addEventListener('click',function(){
     // console.log("aaa");
@@ -80,3 +80,10 @@ botonArriba.addEventListener('click',function(){
     // window.scrollY=0;
     window.scrollTo({top:0, behavior:"smooth"});
 });
+
+
+let barraNav=document.querySelectorAll('barraNavegacion');
+
+window.addEventListener('scroll',function () {
+console.log("aaa");
+    });

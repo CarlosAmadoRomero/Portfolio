@@ -65,3 +65,16 @@ function moverSlideOfertas(index){
     caja_bullets[index].classList.add('selected');
     
 }
+
+let barraNav=document.querySelectorAll('barraNavegacion');
+let navPro=document.getElementById('navProductos');
+window.addEventListener('scroll',function () {
+    console.log(window.scrollY);
+    if(window.scrollY>=980 && window.scrollY<2010){
+        
+        navPro.style.color="#d5ce51";
+    }else{
+        navPro.style.color="var(--color-secundario)";
+    }
+
+    });
