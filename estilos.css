@@ -209,6 +209,7 @@ section{
     justify-self: center;
     justify-content: center;
     gap: 15px;
+    flex: 0  50%;
     
 
 }
