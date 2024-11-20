@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="animales.css">
+</head>
+
+<body>
+    <header>
+    </header>
+    <section id="home"></section>
+    <div class="headerSuperior">
+        <div class="enlaces">
+            <a href=""><i class="bi bi-geo-alt-fill"></i>Pet street - bergen,norway</a>
+            <a href=""><i class="bi bi-envelope-fill"></i>petshop@site.com</a>
+            <a href=""><i class="bi bi-telephone-fill"></i>+1(123) 456 7890</a>
+        </div>
+
+        <div class="iconos">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+           
+            <i class="bi bi-instagram"></i>
+
+        </div>
+    </div>
+
+
+    <div class="headerInferior pegajoso">
+        <div class="logo">
+            <img src="./imgAnimal/pata.png" alt="">
+            <a href="">Happy paw</a>
+        </div>
+        <div class="menuBar">
+            <i class="bi bi-list"></i>
+        </div>
+        <div class="barraNavegacion" id="barraNavegacion">
+            <a href="#home">Home</a>
+            <a href="#service">Service</a>
+            <a href="#about">About</a>
+            <a href="#prices">Prices</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#offers">Offers</a>
+            <a href="#adoption">Adoption</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="menuBurguer" onclick="MostrarMenu()">
+            <svg class="burguer" xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-list"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+            </svg>
+        </div>
+
+        <div id="menuOculto" class="menuOculto">
+            <a href="#home" style="color: var(--color-primario);">Home</a>
+            <a href="#service">Service</a>
+            <a href="#about">About</a>
+            <a href="#prices">Prices</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#offers">Offers</a>
+            <a href="#adoption">Adoption</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </div>
+    
+
+    <!-- -------------------SLIDER------------------- -->
+    <section class="sliderInicio">
+             
+        <div class="contenedorImagenes">
+            <div class="imagenIndividual" >
+                <img src="./imgAnimal/slider/perro-familia.webp" alt="" class="display" id="slideImagen1">
+         
+                <img src="./imgAnimal/slider/perro-vet.webp" alt="" class="display noDisplay" id="slideImagen2">
+      
+                <img src="./imgAnimal/slider/gato-blanco.webp" alt="" class="display noDisplay" id="slideImagen3">
+           
+                <img src="./imgAnimal/slider/gato-naranja.webp" alt="" class="display noDisplay" id="slideImagen4">
+
+                <div class="cuadroOscuro"> 
+                    <div class="contenidoCuadroOscuroPRelativa">
+                        <div class="contenidoCuadroOscuroPabsoluta">
+                            <h2 id="tituloCuadroOscuro">Welcome to happy paws</h2>
+                            <p id="textoCuadroOscuro">We offer all the best quality product and services for your adorable pets</p>
+                            <div class="botonContenedorOscuro">
+                                <button id="botonCuadroOscuro">our services</button>
+
+                            </div>
+                        </div>
+                        
+                    </div>
+                 
+                </div>
+            </div>  
+            <div class="cuadroOscuroMenor1k">
+                <h2 id="tituloCuadroOscuro2">Welcome to happy paws</h2>
+            </div>
+
+            <div onclick="cambiarSlide('slide1')" class="botonPrimerSlide1 botonActual" id="slide1"></div>
+            <div onclick="cambiarSlide('slide2')" class="botonPrimerSlide2" id="slide2"></div>
+            <div onclick="cambiarSlide('slide3')" class="botonPrimerSlide3" id="slide3"></div>
+            <div onclick="cambiarSlide('slide4')" class="botonPrimerSlide4" id="slide4"></div>
+
+            
+
+        </div>
+    
+       
+    </section>
+    <!-- --------------SECCION SERVICIO-------------- -->
+    <section class="seccionServicio" id="service">
+        <div class="contenedroServicio">
+            <div class="tituloServicio">
+                <h1>Our services <img src="./imgAnimal/pata.png" alt=""></h1>
+            </div>
+            <div class="imagenServicio">
+                <div class="imagenServicioIndividual">
+                    <div class="contenedorImagenServicio">
+                       
+                    <img src="./imgAnimal/pethealth.jpg" alt="">
+                    </div>
+ 
+                    <h2>Pet health</h2>
+                    <p>We offer the most amazing services for your Pet's health and High quality professionals ready to
+                        take care of your best friend.</p>
+                </div>
+                <div class="imagenServicioIndividual">
+                    <div class="contenedorImagenServicio">
+                        <img src="./imgAnimal/petgrooming.jpg" alt="">
+                    </div>
+                    <h2>Pet grooming</h2>
+                    <p>Lets talk through some ideas, look at some pictures and help you choose the next great look for
+                        your pet in out shop with the best.</p>
+                </div>
+                <div class="imagenServicioIndividual">
+                    <div class="contenedorImagenServicio">
+ 
+                        <img src="./imgAnimal/petsitting.jpg" alt="">
+                    </div>
+                    <h2>Pet sittin</h2>
+                    <p>Now you can leave your pet here when you travel with safety and great care for all animals we
+                        host here are our hotel.</p>
+                </div>
+ 
+            </div>
+        </div>
+
+    </section>
+    <!-- --------------STATS-------------- -->
+    <section class="stats">
+
+        <div class="contenedroStats">
+            <div class="tituloStats">
+                <h1>Our stats <img src="./imgAnimal/pata.png" alt=""></h1>
+            </div>
+            <div class="infoStats">
+                <div class="infoStatIndividual">
+                    <h2>180</h2>
+                    <p>Customers</p>
+                </div>
+                <div class="infoStatIndividual">
+                    <h2>16</h2>
+                    <p>Professionals</p>
+                </div>
+                <div class="infoStatIndividual">
+                    <h2>67</h2>
+                    <p>Pets Hosted</p>
+                </div>
+                <div class="infoStatIndividual">
+                    <h2>50</h2>
+                    <p>Products</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ------------------about us--------- -->
+
+
+    <section class="about" id="about">
+        <div class="contenedorAbout">
+            <h1>About us <img src="./imgAnimal/pata.png" alt=""></h1>
+            <div class="contenedorCuadro">
+                <i id="triangulo" class="bi bi-caret-down-fill pos1"></i>
+                <div class="cuadroIndividual">
+                    <button class="botonActivo" id="botonClinica"  onclick="cambiaFrame('1')" >our clinic</button>
+                </div>
+
+                <div class="cuadroIndividual">
+                    <button id="botonFilosofia" onclick="cambiaFrame('2')">our phylosophy</button>
+                </div>
+
+                <div class="cuadroIndividual">
+                    <button id="botonEquipo" onclick="cambiaFrame('3')">our team</button>
+                </div>
+            </div>
+
+
+            <div class="contenidoInfo activo" id='primerCuadro'>
+                <div class="contenidoEImagen">
+                    <div class="textoYFoto">
+                        <h2>We take care of your best friend</h2>
+                        <p>Interdum donec eget metus auguen unc vel mauris ultricies, vest ao ibulum orci eget, blandit
+                            quam elit, eu imperdiet neque semper lorem ipsum dolores viverra elit Aliquam erat volutpat
+                            phase llus ac sodales felis tiam non metus aliquam eros accumsan mollis eget vitae tellusm.
+                            Sed in lobortis nisl Phasellus ultrices gravida massa luctus ornare. Aliquam erat volutpat
+                            phas ellus sodales felis tiam non metus aliquam eros accumsan mollis eget vitae tellusm
+                            Pellentesque turpis lectus, placerat a ultricies a, posuere lorem ipsuet.</p>
+                    </div>
+
+                    <img src="./imgAnimal/hamster.png" alt="" class="imagenHamster">
+                </div>
+
+                <div class="infoInterna">
+                    <div>
+                        <i><img src="./imgAnimal/pet-home.svg" alt=""></i>
+                        <h2>High Tech Clinic</h2>
+                        <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum dolores.</p>
+                    </div>
+                    <div><i><img src="./imgAnimal/dog-playing.svg" alt=""></i>
+                        <h2>Amazing Support</h2>
+                        <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum dolores.</p>
+                    </div>
+                    <div><i><img src="./imgAnimal/medal.svg" alt=""></i>
+                        <h2>Award Winner</h2>
+                        <p>Suspendisse blandit quam elit, eu imperdiet neque semper lorem ipsum dolores.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="contenidoInfo NoActivo" id='segundoCuadro' >
+                <div class="contenidoEImagen">
+                    <div class="textoYFotoPerro" >
+                        <h2>Our Philosophy</h2>
+                        <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet interdum. Sed in
+                            lobortis nisl Phasellus ultrices gravida massa luctus ornare ellen tesque turpis lectus,
+                            placerat a ultricies a, posuere a nibh fusce mollis imperdiet interdum donec eget metus
+                            auguen unc vel mauris ultricies, vestibulum orci eget, viverra elit. Aliquam erat volutpat.
+                            Phasellus ac sodales felis tiam non metus aliquam eros accumsan mollis eget vitae tellusm..
+                        </p>
+                    </div>
+                    <div class="videoPerro">
+                        <iframe src="https://www.youtube.com/embed/deN3nt3Sdhc"
+                        title="Dog Barking Video Footage Slow Motion Free Mp4 Download - Free HD Stock Footage"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    
+
+
+                </div>
+            </div>
+
+            <div class="contenidoInfo NoActivo" id='tercerCuadro'>
+                <div class="contenidoEImagen">
+                    <div class="textoYFoto ">
+                        <h2>Meet our team</h2>
+                        <div class="contenedorEquipos">
+                            <div class="equipo">
+
+                                <img src="./imgAnimal/equipo/team1.jpg" alt="">
+                                <h2>Luane Silva</h2>
+                                <h3>Veterinarian</h3>
+                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet
+                                    interdum.
+                                </p>
+                                <div class="redes">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-linkedin"></i>
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                            </div>
+
+                            <div class="equipo">
+
+                                <img src="./imgAnimal/equipo/team2.jpg" alt="">
+                                <h2>Luane Silva</h2>
+                                <h3>Veterinarian</h3>
+                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet
+                                    interdum.</p>
+                                <div class="redes">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-linkedin"></i>
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                            </div>
+
+                            <div class="equipo">
+                                <img src="./imgAnimal/equipo/team3.jpg" alt="">
+                                <h2>Nancy May</h2>
+                                <h3>Specialist</h3>
+                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet
+                                    interdum.
+                                </p>
+                                <div class="redes">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-linkedin"></i>
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                            </div>
+
+
+                            <div class="equipo">
+                                <img src="./imgAnimal/equipo/team4.jpg" alt="">
+                                <h2>Amelie Plin</h2>
+                                <h3>Veterinarian</h3>
+                                <p>Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh imperdiet
+                                    interdum.
+                                </p>
+                                <div class="redes">
+                                    <i class="bi bi-facebook"></i>
+                                    <i class="bi bi-twitter"></i>
+                                    <i class="bi bi-linkedin"></i>
+                                    <i class="bi bi-instagram"></i>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+    </section>
+
+    <section id="clients">
+
+        <div class="clients">
+            <div class="imgFontoCliente1"><img src="./imgAnimal/heartpaws.png" alt=""></div>
+            <div class="imgFontoCliente2"><img src="./imgAnimal/heartpaws2.png" alt=""></div>
+
+            <h1>what out clients say <img src="./imgAnimal/pata.png" alt=""></h1>
+            <div class="clienteIndividual  cliente1" id="cliente1">
+                <img src="./imgAnimal/cliente/testimonial3.jpg" alt="">
+                <p> Laudantium totam tempore optio doloremque aut eius animi Suspendisse a elementum ante. Nunc aliquet
+                    tincidunt quam, non egestas arcu imperdiet et maecenas eu eros non nibh aliquet iaculis..</p>
+
+                <p class="firma">-Maria solvera, model</p>
+
+            </div>
+            <div class="clienteIndividual  clienteNoActivo cliente2" id="cliente2">
+                <img src="./imgAnimal/cliente/testimonial2.jpg" alt="">
+                <p>Laudantium totam tempore optio doloremque aut eius animi Suspendisse a elementum ante. Nunc aliquet
+                    tincidunt quam, non egestas arcu imperdiet et maecenas eu eros non nibh aliquet iaculis..</p>
+
+                <p class="firma">- John Casady, astronaut</p>
+            
+                </div>
+            <div class="clienteIndividual clienteNoActivo cliente3" id="cliente3">
+                <img src="./imgAnimal/cliente/testimonial1.jpg" alt="">
+                <P>Lotam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi Suspendisse
+                    a elementum anteu imperdiet et maecenas eu eros non nibh aliquet iaculis..</P>
+                    <p class="firma">- Joanna Vilken, TV Star</p>
+            </div>
+            <!-- <button onclick="siguienteCliente()">siguiente</button> -->
+
+            <div id="bc1" class="botonCliente bc1 bcActivo" onclick="cambiarCliente('bc1')"></div>
+            <div id="bc2"  class="botonCliente bc2" onclick="cambiarCliente('bc2')"></div>
+            <div id="bc3"  class="botonCliente bc3" onclick="cambiarCliente('bc3')"></div>
+        </div>
+    </section>
+
+
+    <section id="prices">
+        <div class="contenedorPrecios">
+            <h1>Our prices <img src="./imgAnimal/pata.png" alt=""></h1>
+            <div class="paqueteIndividual">
+                <ul>
+                    <h2>Basic</h2>
+                    <li class="precio">$49.00 <p> per month</p>
+                    </li>
+
+                    <li>2 Dog walks</li>
+                    <li>1 vet visit</li>
+                    <li>1 pet spa</li>
+                    <li>10 vet calls</li>
+                    <li>free support</li>
+                    <li><button>Sign up now</button></li>
+                </ul>
+
+                <ul>
+                    <h2 class="advanced">Advanced</h2>
+                    <li class="precio">$99.00<p> per month</p>
+                    </li>
+
+                    <li>5 Dog walks</li>
+                    <li>4 vet visit</li>
+                    <li>5 pet spa</li>
+                    <li>20 vet calls</li>
+                    <li>free support</li>
+                    <li><button>Sign up now</button></li>
+                </ul>
+
+                <ul>
+                    <h2>Professional</h2>
+                    <li class="precio">$199.00<p> per month</p>
+                    </li>
+
+                    <li>10 Dog walks</li>
+                    <li>5 vet visit</li>
+                    <li>10 pet spa</li>
+                    <li>40 vet calls</li>
+                    <li>free support</li>
+                    <li><button>Sign up now</button></li>
+                </ul>
+
+                <ul>
+                    <h2>Extreme</h2>
+                    <li class="precio">$299.00<p> per month</p>
+                    </li>
+
+                    <li><b>unlimited</b> Dog walks</li>
+                    <li><b>unlimited</b> vet visit</li>
+                    <li><b>unlimited</b> pet spa</li>
+                    <li><b>unlimited</b> vet calls</li>
+                    <li><b>unlimited</b> support</li>
+                    <li><button>Sign up now</button></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section id="discover">
+        <div class="discover">
+            <div class="perro">
+                <img class="hueso1" src="./imgAnimal/bones.png" alt="">
+                <img class="hueso2" src="./imgAnimal/bones1.png" alt="">
+                <img src="./imgAnimal/perro-huesos.png" alt="">
+            </div>
+            <div class="textoDiscover">
+                <h2>Discover our Pet Shop and Services</h2>
+                <p>Contact or learn more about us and make your pet happy in your visit to our Shop and discover all our
+                    amazing products and services to make your pet very healthy and active with a lot of energy this
+                    winter
+                    lorem ipsum ipsuet dolor.</p>
+                <button>contact us</button>
+                <button>more about us</button>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+
+    <section id="gallery">
+        <div class="gallery">
+            <h1>our gallery <img src="./imgAnimal/pata.png" alt=""></h1>
+            
+            <div class="botonesGaleria">
+
+            <button>All</button>
+            <button class="botonPerrosYGatos">Dogs and cats</button>
+            <button>Other pets</button>
+            </div>
+            
+            <div class="fotosGaleria">
+                <img src="./imgAnimal/galeria/gallery1.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery2.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery3.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery4.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery5.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery6.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery7.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery8.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery9.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery10.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery11.jpg" alt="">
+                <img src="./imgAnimal/galeria/gallery12.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="offers">
+        <div class="offers">
+            <img class="imagenHuesosArriba" src="./imgAnimal/cartoonbones1.png" alt="">
+            <h2>This Month's Offers <img src="./imgAnimal/pata.png" alt=""></h2>
+            <div id="of1" class="sliderOffer offersActivo">
+                <img src="./imgAnimal/offer1.png" alt="">
+                <div class="textoOffers">
+                    <h3>vet services: <span class="descuento">20% off</span></h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet
+                        vulputate.
+                        Quisque mauris augue, lorem tincidunt condimentum vitae uisque mauris augue, lorem ipsum
+                        tincidunt condimentum vitae.
+                    </p>
+                </div>
+            </div>
+            <div id="of2" class="sliderOffer offersNoActivo">
+                <img src="./imgAnimal/offer2.png" alt="">
+                <div class="textoOffers">
+                    <h3>Pet School: <span class="descuento">30% off</span></h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet
+                        vulputate.
+                        Quisque mauris augue, lorem tincidunt condimentum vitae uisque mauris augue, lorem ipsum
+                        tincidunt condimentum vitae.
+                    </p>
+
+                </div>
+            </div>
+            <div id="of3" class="sliderOffer offersNoActivo">
+                <img src="./imgAnimal/offer3.png" alt="">
+                <div class="textoOffers">
+                    <h3>quality pet foods: <span class="descuento">40% off</span></h3>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet
+                        vulputate.
+                        Quisque mauris augue, lorem tincidunt condimentum vitae uisque mauris augue, lorem ipsum
+                        tincidunt condimentum vitae.
+                    </p>
+                </div>
+            </div>
+            <img class="imagenHuesosAbajo" src="./imgAnimal/cartoonbones1.png" alt="">
+
+            <div class="contenedorBotonesOffer">
+                <div id="b1" class="botonSlideOffer b1 bActivo" onclick="cambiarOferta('b1')">
+                </div>
+                <div id="b2" class="botonSlideOffer b2" onclick="cambiarOferta('b2')">
+                </div>
+                <div id="b3" class="botonSlideOffer b3" onclick="cambiarOferta('b3')">
+                </div>
+
+            </div>
+           
+
+        </div>
+
+    </section>
+
+
+    <section id="adoption">
+
+        <div class="adoption">
+            <h2>Adoption <img src="./imgAnimal/pata.png" alt=""></h2>
+            <div class="adoptionTop">
+                <img src="./imgAnimal/adopt.jpg" alt="">
+                <div class="adtoptionTopTexto">
+                    <h3>Looking to Adopt an Animal?</h3>
+                    <p>
+                        Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh. Fusce mollis imperdiet
+                        interdum
+                        donec eget metus auguen unc vel mauris ul tricies, vest ibu lum orci eget, viverra elit. Aliquam
+                        erat volut pat phas ellus ac sodales felis tiam non metus ali quam eros accumsan mollis eget
+                        vitaeusm. Aliquam erat volutpat phasellus ac sodales felis tiam non metus ali quam eros accumsan
+                        mollis eget vitae tel lusm. Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                        Fusce mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum
+                        orci
+                        eget, viverra elit. Aliquam erat volutpat phasellus ac sodales felis tiam non metus ali quam
+                        eros
+                        accumsan mollis eget vi tae.</p>
+                </div>
+
+            </div>
+            <div class="adoptionTitulos">
+                <h3>Frequent questions</h3>
+                <h3>Find a new friend</h3>
+            </div>
+            <div class="adoptionBot">
+
+
+                <div class="adoptionQuestions">
+                    <div class="question" onclick="respuesta('ans1')">
+                        <p>is account registration required?</p>
+                        <div class="ans" id="ans1">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                            Fusce
+                            mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci
+                            eget, viverra elit.</div>
+                    </div>
+                    <div class="question" onclick="respuesta('ans2')">
+                        <p>how do i apply?</p>
+                        <div class="ans" id="ans2">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                            Fusce
+                            mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci
+                            eget, viverra elit.</div>
+                    </div>
+                    <div class="question" onclick="respuesta('ans3')">
+                        <p>what documents do i need to adopt?</p>
+                        <div class="ans" id="ans3">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                            Fusce
+                            mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci
+                            eget, viverra elit.</div>
+                    </div>
+                    <div class="question" onclick="respuesta('ans4')">
+                        <p>how to choose a pet?</p>
+                        <div class="ans" id="ans4">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                            Fusce
+                            mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci
+                            eget, viverra elit.</div>
+                    </div>
+
+                    <div class="question" onclick="respuesta('ans5')">
+                        <p>are the animal neutered?</p>
+                        <div class="ans" id="ans5">Pellentesque turpis lectus, placerat a ultricies a, posuere a nibh.
+                            Fusce
+                            mollis imperdiet interdum donec eget metus auguen unc vel mauris ultricies, vest ibulum orci
+                            eget, viverra elit.</div>
+                    </div>
+                </div>
+
+                <div class="contenedorSlider">
+
+
+                    <div class="adoptionSlider">
+                        <button onclick="anterior()" class="anterior"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                            </svg></button>
+                        <button onclick="siguiente()" class="siguiente"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                            </svg></button>
+
+                            <div id="img1" class="adoptionSlide ">
+                                <img src="./imgAnimal/adopcionSlider/adoption1.jpg" alt="">
+                                <h4>Lilica</h4>
+                                <p><b>Gender:</b> Female</p>
+                                <p><b>Neutered:</b> Yes</p>
+                                <p><b>Age: </b>5 years</p>
+                                <button>More info</button>
+                            </div>
+                            <div id="img2" class="adoptionSlide ">
+                                <img src="./imgAnimal/adopcionSlider/adoption2.jpg" alt="">
+                                <h4>charlie</h4>
+                                <p><b>Gender:</b> Male</p>
+                                <p><b>Neutered:</b> No</p>
+                                <p><b>Age: </b>4 months</p>
+                                <button>More info</button>
+                            </div>
+                            <div id="img3" class="adoptionSlide ">
+                                <img src="./imgAnimal/adopcionSlider/adoption3.jpg" alt="">
+                                <h4>Lucky</h4>
+                                <p><b>Gender:</b> Male</p>
+                                <p><b>Neutered:</b> Yes</p>
+                                <p><b>Age: </b>1 years</p>
+                                <button>More info</button>
+                            </div>
+     
+                            <div id="img4" class="adoptionSlide img4">
+                                <img src="./imgAnimal/adopcionSlider/adoption4.jpg" alt="">
+                                <h4>Madelene</h4>
+                                <p><b>Gender:</b> Female</p>
+                                <p><b>Neutered:</b> No</p>
+                                <p><b>Age: </b>2 years</p>
+                                <button>More info</button>
+                            </div>
+                            <div id="img5" class="adoptionSlide img5">
+                                <img src="./imgAnimal/adopcionSlider/adoption5.jpg" alt="">
+                                <h4>Joanne</h4>
+                                <p><b>Gender:</b> Female</p>
+                                <p><b>Neutered:</b> Yes</p>
+                                <p><b>Age: </b>5 years</p>
+                                <button>More info</button>
+                            </div>
+                            <div id="img6" class="adoptionSlide img6">
+                                <img src="./imgAnimal/adopcionSlider/adoption6.jpg" alt="">
+                                <h4>cutesy</h4>
+                                <p><b>Gender:</b> Male</p>
+                                <p><b>Neutered:</b> Yes</p>
+                                <p><b>Age: </b>2 years</p>
+                                <button>More info</button>
+                            </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BRAND -->
+
+    <section id="brands">
+        <div class="brands">
+            <div class="tituloBrand">
+
+                <h2>brand we work with <img src="./imgAnimal/pata.png" alt=""></h2>
+            </div>
+            <div class="brandsBotones">
+                <button><img src="./imgAnimal/client1.png" alt=""></button>
+                <button><img src="./imgAnimal/client2.png" alt=""></button>
+                <button><img src="./imgAnimal/client3.png" alt=""></button>
+                <button><img src="./imgAnimal/client4.png" alt=""></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <h1>get in touch <img src="./imgAnimal/pata.png" alt=""></h1>
+        <div class="contact">
+            <div class="contactInfo">
+                <h2>Information</h2>
+                <p>Contact for additional information:</p>
+                <p> <svg class="iconoContact" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+                    </svg>petshop@site.com or call us</p>
+                <p><svg class="iconoContact" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+                    </svg>+1 (123) 456 7890</p>
+
+
+                <h2>Location & time</h2>
+                <p><svg class="iconoContact" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
+                    </svg>We are located at Pet City, 304.</p>
+                <p><svg class="iconoContact" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                        <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                        <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                    </svg>Open from 9 a.m to 10 p.m on weekdays and from 9 a.m to 2 p.m in weekends.</p>
+
+
+            </div>
+
+            <div class="contactForm">
+                <form class="contactFormulario" action="">
+                    <input type="text" name="nombre" id="nombre" placeholder="Name">
+                    <input type="email" name="email" id="email" placeholder="Email ID">
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+                    <textarea rows="10" name="" id="" placeholder="Enter your message"></textarea>
+                    <button>Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------------rueda colores-------------------- -->
+    <div class="contenedorColorYRueda" id="contenedorColorYRueda">
+        <h1>colores</h1>
+        <div class="colores">
+            <div id="azul" class="azul" onclick="cambiarColor('azul')"></div>
+            <div id="rojo" class="rojo" onclick="cambiarColor('rojo')"></div>
+            <div id="verde" class="verde" onclick="cambiarColor('verde')"></div>
+            <div id="morado" class="morado" onclick="cambiarColor('morado')"></div>
+            <div id="naranja" class="naranja" onclick="cambiarColor('naranja')"></div>
+
+        </div>
+        <div class="rueda" id="rueda" onclick="mover()">
+            <!-- <i class="bi bi-gear-fill"></i> -->
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear-fill"
+                viewBox="0 0 16 16">
+                <path
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+            </svg>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="mapa">
+            <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12793.390062333938!2d-4.436260406048568!3d36.714214281259984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7997c4ec75f%3A0x268aec47119f9f83!2sTiendanimal!5e0!3m2!1ses!2ses!4v1730023719980!5m2!1ses!2ses"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="footer">
+            <div class="social">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-linkedin"></i>
+
+                <i class="bi bi-instagram"></i>
+            </div>
+
+            <div class="copy">
+                <p>copyright &copy 2015-2018 ingrid kuhn</p>
+            </div>
+        </div>
+
+
+    </footer>
+
+</body>
+
+<script src="./script/scriptAnimales.js"></script>
+</html>
+<!-- Agregar transiciones, -->
