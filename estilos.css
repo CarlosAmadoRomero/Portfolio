@@ -1,5 +1,5 @@
 :root{
-    --color-primario:#121212;
+    --color-primario:#2d2d2d;
     --color-secundario:whitesmoke;
     --color-terciario:whitesmoke;
     
@@ -15,7 +15,6 @@ h1{
     text-align: center;
     width: 100%;
     border-bottom: 1px solid var(--color-secundario);
-    /* padding-bottom: 3%; */
 }
 h3{
     color: #121212;
@@ -32,9 +31,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* height: 100%; */
     color:whitesmoke;
-    /* background-color:var(--color-primario); */
    
 }
 
@@ -54,7 +51,6 @@ section{
 /* menu */
 .menu{
     z-index: 999;
-    /* top: 180px; */
     position: fixed;
     width: 60px;
     left: 0;
@@ -85,7 +81,6 @@ section{
     border-top-right-radius: 20px;
     
     left: 0;
-    border: 1px solid var(--color-terciario);
 
 }
 
@@ -157,16 +152,13 @@ section{
     gap: 10px;
     margin: 20px 0 20px 0;
     width: 100%;
-    height: 300px;
+    height: 240px;
     background-color: lightgray;
-    /* border-bottom-left-radius: 20px; */
     border-bottom-right-radius: 20px;
     position: absolute;
     left: -100px;
     top: 40px;
     transition: left 0.5s;
-
-    border: 1px solid var(--color-terciario);
     border-top: none;
 
 
@@ -186,7 +178,7 @@ section{
 
 
 .menuOpciones div:hover {
-    transform: translateX(20px);
+    transform: translateX(10px);
     background-color: aquamarine;
     color: white;
     cursor: pointer;
@@ -219,7 +211,6 @@ section{
     width: 300px;
     height: 300px;
     border-radius: 10%;
-    /* background-color: aqua; */
     overflow: hidden;
     box-shadow: 1px 2px 10px var(--color-secundario);
     display: flex;
@@ -251,7 +242,6 @@ section{
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
-    /* padding: 5%; */
     top: -600px;
     transition: 1s;
 }
@@ -263,7 +253,6 @@ section{
     height: 60%;
     background-color: white;
     text-align: center;
-    /* padding: 30px; */
 }
 .color:hover{
     cursor: pointer;
@@ -281,73 +270,36 @@ section{
     height: 30px;
     border-radius: 100%;
 }
-/* COLORES */
-.paletaOscuro .colorPrimario{
-    background-color: #121212;
-}
-.paletaOscuro .colorSecundario{
-    background-color: #333333;
-}
-.paletaOscuro .colorTerciario{
-    background-color: whitesmoke;
-}
-
-.paletaClaro .colorPrimario{
-    background-color: whitesmoke;
-}
-.paletaClaro .colorSecundario{
-    background-color: #121212;
-}
-.paletaClaro .colorTerciario{
-    background-color: #333333;
-}
-
-.paletaMaron .colorPrimario{
-    background-color: brown;
-}
-.paletaMaron .colorSecundario{
-    background-color: burlywood;
-}
-.paletaMaron .colorTerciario{
-    background-color: chocolate;
-}
-
-.paletaVerde .colorPrimario{
-    background-color: green;
-}
-.paletaVerde .colorSecundario{
-    background-color: greenyellow;
-}
-.paletaVerde .colorTerciario{
-    background-color: lightgreen;
-}
-
-.verColores{
-    top: 0;
-}
 
 /* lenguajes usados */
+#lenguajes{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+}
 .lenguajes{
-
-    justify-content: center;
-    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-evenly;
     width: 100%;
+    height: 60vh;
     gap: 10px;
     
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
 }
 .contenedorLenguajeIndividual{
     display: flex;
     flex-wrap: wrap;
-    width: 30%;
-    height: 100%;
-    /* background-color: red; */
-    justify-self: center;
+    width: 100%;
+    height: 80%;
     justify-content: center;
     gap: 40px;
-
 }
 .lenguajeIndividual{
     width: 150px;
+    width: 25%;
     height: 150px;
     background-color: var(--color-secundario);
     border-radius: 100%;
@@ -360,16 +312,59 @@ section{
     width: 60%;
     height: 60%;
 }
-
+.lenguajesAprendiendo{
+    width: 30%;
+}
+.aprendiendo{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nuevosLenguajes{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+.lenguajeIndividual img{
+    object-fit: contain;
+}
 /* sobremi */
 .sobreMi{
-    width: 60%;
+    height: 80vh;
+    width: 80%;
     display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
-.sobreMi p{
+.texto{
+    width: 50%;
+}
+.imagen{
+    height: 300px;
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 2px 20px var(--color-secundario);
+ 
+}
+.imagen img{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+
+}
+.texto{
+    text-align: center;
     font-size: 20px;
 }
-
+.texto h2{
+    font-size: 50px;
+}
 
 /* contacto */
 .contacto{
@@ -391,4 +386,60 @@ section{
     color: var(--color-secundario);
     display: none;
     cursor: pointer;
+}
+/* modo */
+button{
+    padding: 0;
+    margin: 0;
+}
+.noche{
+    width: 55px;
+    height: 25px;
+    border: none;
+    border-radius: 30px;
+    background-color: gray;
+    position:fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 30px;
+    right: 30px;
+
+}
+
+.noche:hover{
+    cursor: pointer;
+}
+.posicionRelativa{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+
+}
+.punto{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 100%;
+    left: 5px;
+    transition:left 0.5s;
+}
+.der{
+    left: 35px;
+
+}
+
+.bi{
+    font-size: 20px;
+}
+.bi-brightness-high-fill{
+    color: rgb(246, 246, 23);
+}
+.bi-moon-fill{
+    color: rgb(76, 76, 254);
 }
